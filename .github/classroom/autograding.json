@@ -1,0 +1,75 @@
+{
+    "tests": [
+      {
+        "name": "Test flippedHorizontally",
+        "setup": "javac ImageProcessingTester.java",
+        "run": "java ImageProcessingTester flippedHorizontally eyes.ppm",
+        "input": "",
+        "output": "(113,11,0) (105,18,0) (104,37,21) (135,80,75) (143,97,97) (136,92,93) (113,58,55)",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 10
+      },
+      {
+        "name": "Test flippedVertically",
+        "setup": "javac ImageProcessingTester.java",
+        "run": "java ImageProcessingTester flippedVertically eyes.ppm",
+        "input": "",
+        "output": "(64,42,78) (54,37,71) (41,26,65) (31,18,62) (20,8,56) (20,10,62) (17,15,65) (15,13,63) (12,10,60)",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 15
+      },
+      {
+        "name": "Test grayScaled",
+        "setup": "javac ImageProcessingTester.java",
+        "run": "java ImageProcessingTester grayScaled eyes.ppm",
+        "input": "",
+        "output": "(11,11,11) (9,9,9) (9,9,9) (8,8,8) (11,11,11) (11,11,11) (11,11,11) (12,12,12) (10,10,10) (17,17,17)",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 15
+      },
+      {
+        "name": "Test scaled eyes.ppm 200 150",
+        "setup": "javac ImageProcessingTester.java",
+        "run": "java ImageProcessingTester scaled1 eyes.ppm",
+        "input": "",
+        "output": "(150,91,1) (153,91,4) \n150\n200\n",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 15
+      },
+      {
+        "name": "Test blend eyes ironman 0.5",
+        "setup": "javac ImageProcessingTester.java",
+        "run": "java ImageProcessingTester blend eyes.ppm ironman.ppm",
+        "input": "",
+        "output": "(43,45,73) (88,52,49) (116,101,52) (117,98,50) (116,98,40) (79,42,40) (35,41,68) (34,42,75)",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 15
+      },
+      {
+        "name": "Test blend escher xmen 0.3",
+        "setup": "javac ImageProcessingTester.java",
+        "run": "java ImageProcessingTester blend escher.ppm xmen.ppm",
+        "input": "",
+        "output": "(244,205,138) (248,209,142) (246,207,140) (242,203,136) (238,199,132) (212,173,106) (204,165,98)",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 15
+      },
+      {
+        "name": "Test scaled eyes.ppm 300 200",
+        "setup": "javac ImageProcessingTester.java",
+        "run": "java ImageProcessingTester scaled2 eyes.ppm",
+        "input": "",
+        "output": "(0,1,42) (3,0,26) (47,1,1) (159,69,9) (153,88,4) \n300\n200\n",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 15
+      }
+    ]
+  }
+  
